@@ -1,0 +1,196 @@
+/* styles.css – Design professionnel et simple pour OCC Analyses */
+
+
+/* Couleurs principales */
+:root {
+    --bleu-occ: #0077b6;
+    --vert-occ: #2a9d8f;
+    --marron-occ: #8d6e63;
+    --gris-fond: #f7f7f7;
+    --noir-texte: #212121;
+    --blanc: #ffffff;
+  }
+  
+  /* Masquer le header et le footer Streamlit natifs */
+  header[data-testid="stHeader"],
+  footer[data-testid="stFooter"] {
+      visibility: hidden;
+      height: 0;
+  }
+  
+  /* --- SIDEBAR OCC --- */
+  section[data-testid="stSidebar"] {
+      background-color: var(--bleu-occ) !important;
+      color: var(--blanc) !important;
+  }
+  
+  /* Padding interne + style du premier bloc */
+  section[data-testid="stSidebar"] > div:first-child {
+      padding: 1.5rem;
+  }
+
+    /* Liens et textes dans la sidebar */
+    section[data-testid="stSidebar"] a,
+    section[data-testid="stSidebar"] label,
+    section[data-testid="stSidebar"] span,
+    section[data-testid="stSidebar"] p {
+        color: var(--blanc) !important;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    section[data-testid="stSidebar"] a:hover {
+        color: var(--vert-occ) !important;
+    }
+
+    /* Boutons dans la sidebar */
+    section[data-testid="stSidebar"] button {
+        background-color: var(--vert-occ);
+        color: var(--blanc);
+        border-radius: 8px;
+    }
+    /* Supprimer l’espace vide au-dessus des pages */
+    main > div:first-child {
+        padding-top: 0rem !important;
+    }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--gris-fond);
+    color: var(--noir-texte);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Conteneur principal */
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-top: 0px;
+    background-color: var(--blanc);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Titres */
+  h1, h2, h3 {
+    color: var(--bleu-occ) !important; 
+    margin-bottom: 1rem;
+  }
+  h3 {
+    color:  #21867a !important; 
+    margin-bottom: 1rem;
+  }
+  
+  /* Boutons */
+  .stButton > button {
+    background-color: var(--vert-occ);
+    color: var(--blanc);
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .stButton > button:hover {
+    background-color: #21867a;
+  }
+ 
+    /* Téléchargements (st.download_button)                               */
+
+    div.stDownloadButton > button {
+        background-color: var(--bleu-occ) !important;   /* couleur OCC */
+        color: var(--blanc) !important;
+        border: none !important;
+        border-radius: 10px !important;
+        padding: 0.6rem 1.2rem !important;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.25s ease;
+    }
+
+    div.stDownloadButton > button:hover {
+        background-color: #005f8e !important;  /* bleu plus foncé */
+        color: var(--blanc) !important;
+    }
+    div.stFileUploader label {
+        font-weight: bold;
+        color: var(--bleu-occ); /* Couleur du label */
+    }
+    
+    div.stFileUploader {
+        background-color: #f0f8ff;  /* Bleu très clair */
+        padding: 1rem;
+        border-radius: 10px;
+        border: 1px solid var(--bleu-occ);
+        margin-bottom: 1rem;
+    }
+    
+    div.stFileUploader input[type="file"] {
+        color: var(--bleu-occ);
+        font-weight: 600;
+        cursor: pointer;
+    }
+  /* Formulaires */
+  form {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  .stSelectbox, textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc !important;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 1rem;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  /* Grille de disposition */
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  /* Alertes / Messages */
+  .alert {
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: #ffe0b2;
+    color: #6d4c41;
+    margin-top: 1rem;
+  }
+  
+  /* Liens */
+  a {
+    color: var(--bleu-occ);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .row {
+      grid-template-columns: 1fr;
+    }
+  }
+  
