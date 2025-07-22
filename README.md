@@ -68,28 +68,6 @@ Rendez-vous sur [http://localhost:8501](http://localhost:8501).
 
 ---
 
-## 🖼️ Arborescence du projet
-
-```plaintext
-occ-analayses-app/
-│
-├── app.py                 # Code principal Streamlit
-├── Interfaceadmin.png     # Capture d’écran admin
-├── Interfaceuser.png      # Capture d’écran utilisateur
-├── docs/                  # Autres images et documentations
-├── static/                # Fichiers statiques (CSS, JS)
-├── requirements.txt
-└── README.md
-```
-
----
-
-## ✨ Customisation
-
-Personnalisez les couleurs, logos ou fonctionnalités selon vos besoins. Instructions détaillées dans le dossier `docs/`.
-
----
-
 ## 🤝 Contribuer
 
 Les contributions sont les bienvenues ! Merci de suivre le [Code de conduite](CODE_OF_CONDUCT.md) et de lire le [Guide de contribution](CONTRIBUTING.md).
