@@ -24,10 +24,10 @@ OCC Analyses App facilite la gestion, l’analyse et le suivi des produits soumi
 
 ## 💻 Aperçu de l’interface
 
-![Dashboard](Interface admin.png)
+![Dashboard](Interfaceadmin.png)
 *Exemple du tableau de bord principal.*
 
-![Analyses Table](Interfaceuser.png)
+![Analyses Table](Interfaceanalyses.png)
 *Liste des analyses en cours.*
 
 > _Remarque : Si les images ne s’affichent pas sur GitHub, vérifiez que les fichiers `Interfaceadmin.png` et `Interfaceuser.png` (ou autres images nécessaires) sont bien présents à la racine du projet et que leur nom correspond exactement à celui utilisé ici._
